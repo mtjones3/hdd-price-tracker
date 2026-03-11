@@ -21,100 +21,105 @@
       --blue-dim: rgba(59,130,246,0.12);
       --red: #ef4444;
       --yellow: #f59e0b;
-      --font: 'tt-commons-pro', 'DM Sans', system-ui, sans-serif;
+      --font: 'DM Sans', system-ui, sans-serif;
     }
     html { scroll-behavior: smooth; }
     body { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
-    /* TOPBAR */
     .topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; height: 52px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
-    .topbar-brand { font-weight: 700; font-size: 15px; color: var(--text); display: flex; align-items: center; gap: 10px; }
+    .topbar-brand { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 10px; }
     .brand-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
-    .topbar-meta { font-size: 12px; color: var(--text-muted); }
-    .topbar-meta span { color: var(--green); font-weight: 600; }
+    .topbar-meta { font-size: 12px; color: var(--text-muted); display: flex; gap: 16px; align-items: center; }
+    .topbar-meta .updated { color: var(--green); font-weight: 600; }
+    .topbar-meta .stale { color: var(--yellow); }
 
-    /* CONTROLS */
-    .controls { padding: 16px 24px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-    .search-wrap { position: relative; flex: 1; min-width: 220px; }
-    .search-wrap input { width: 100%; background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px 8px 36px; font-size: 13px; outline: none; border-radius: 0; }
-    .search-wrap input:focus { border-color: rgba(110,190,73,0.4); }
-    .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text-dim); font-size: 14px; }
-    .filter-group { display: flex; gap: 8px; flex-wrap: wrap; }
-    select { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; font-size: 13px; cursor: pointer; outline: none; }
-    select:focus { border-color: rgba(110,190,73,0.4); }
-    .btn-export { background: var(--green-dim); border: 1px solid rgba(110,190,73,0.25); color: var(--green); padding: 8px 16px; font-size: 13px; cursor: pointer; font-weight: 600; transition: background .2s; margin-left: auto; }
-    .btn-export:hover { background: rgba(110,190,73,0.2); }
-    .count-badge { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 8px 14px; font-size: 13px; white-space: nowrap; }
-    .count-badge span { color: var(--text); font-weight: 600; }
-
-    /* SEGMENT TABS */
-    .seg-tabs { display: flex; gap: 0; padding: 0 24px; background: var(--surface); border-bottom: 1px solid var(--border); overflow-x: auto; }
+    .seg-tabs { display: flex; padding: 0 24px; background: var(--surface); border-bottom: 1px solid var(--border); overflow-x: auto; }
     .seg-tab { padding: 12px 20px; font-size: 13px; font-weight: 500; color: var(--text-muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; transition: all .15s; user-select: none; }
     .seg-tab:hover { color: var(--text); }
     .seg-tab.active { color: var(--green); border-bottom-color: var(--green); }
-    .seg-tab .tab-count { font-size: 11px; background: var(--surface2); padding: 1px 6px; border-radius: 10px; margin-left: 6px; color: var(--text-dim); }
+    .tab-count { font-size: 11px; background: var(--surface2); padding: 1px 6px; border-radius: 10px; margin-left: 6px; color: var(--text-dim); }
     .seg-tab.active .tab-count { background: var(--green-dim); color: var(--green); }
 
-    /* TABLE */
-    .table-wrap { overflow-x: auto; padding: 0 24px 24px; }
-    table { width: 100%; border-collapse: collapse; min-width: 900px; }
+    .controls { padding: 14px 24px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .search-wrap { position: relative; flex: 1; min-width: 220px; }
+    .search-wrap input { width: 100%; background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px 8px 36px; font-size: 13px; outline: none; font-family: var(--font); }
+    .search-wrap input:focus { border-color: rgba(110,190,73,0.4); }
+    .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text-dim); }
+    select { background: var(--surface2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; font-size: 13px; cursor: pointer; outline: none; font-family: var(--font); }
+    select:focus { border-color: rgba(110,190,73,0.4); }
+    .count-badge { background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted); padding: 8px 14px; font-size: 13px; white-space: nowrap; }
+    .count-badge span { color: var(--text); font-weight: 600; }
+    .btn-export { background: var(--green-dim); border: 1px solid rgba(110,190,73,0.25); color: var(--green); padding: 8px 16px; font-size: 13px; cursor: pointer; font-weight: 600; transition: background .2s; font-family: var(--font); }
+    .btn-export:hover { background: rgba(110,190,73,0.2); }
+
+    .legend { display: flex; gap: 16px; padding: 8px 24px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center; font-size: 12px; color: var(--text-muted); }
+    .legend-label { color: var(--text-dim); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 10px; }
+    .legend-item { display: flex; align-items: center; gap: 5px; }
+
+    .table-wrap { overflow-x: auto; padding: 0 24px 32px; }
+    table { width: 100%; border-collapse: collapse; min-width: 960px; }
     thead th { padding: 10px 12px; text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); border-bottom: 1px solid var(--border); cursor: pointer; white-space: nowrap; user-select: none; }
     thead th:hover { color: var(--text-muted); }
     thead th.sorted { color: var(--green); }
-    thead th .sort-arrow { margin-left: 4px; opacity: .5; }
-    thead th.sorted .sort-arrow { opacity: 1; }
+    .sort-arrow { margin-left: 3px; opacity: .4; }
+    .sorted .sort-arrow { opacity: 1; }
     tbody tr { border-bottom: 1px solid rgba(255,255,255,0.03); transition: background .1s; }
     tbody tr:hover { background: rgba(255,255,255,0.025); }
-    td { padding: 12px 12px; vertical-align: middle; }
+    td { padding: 11px 12px; vertical-align: middle; }
 
-    /* PRODUCT CELL */
-    .prod-name { font-weight: 500; color: var(--text); font-size: 14px; }
-    .prod-series { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+    .prod-name { font-weight: 500; font-size: 14px; }
+    .prod-src { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
 
-    /* BADGES */
-    .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; }
+    .badge { display: inline-flex; align-items: center; padding: 2px 8px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; border-radius: 2px; }
     .badge-seagate { background: var(--green-dim); color: var(--green); border: 1px solid rgba(110,190,73,0.2); }
-    .badge-wd { background: var(--blue-dim); color: var(--blue); border: 1px solid rgba(59,130,246,0.2); }
-    .badge-desktop { background: rgba(107,114,128,.15); color: #9ca3af; }
-    .badge-nas { background: rgba(168,85,247,.12); color: #a855f7; }
-    .badge-nasplus { background: rgba(168,85,247,.18); color: #c084fc; }
-    .badge-surveillance { background: rgba(245,158,11,.1); color: var(--yellow); }
-    .badge-enterprise { background: rgba(239,68,68,.1); color: #f87171; }
-    .badge-gaming { background: rgba(249,115,22,.1); color: #fb923c; }
+    .badge-wd      { background: var(--blue-dim);  color: var(--blue);  border: 1px solid rgba(59,130,246,0.2); }
+    .badge-desktop     { background: rgba(107,114,128,.12); color: #9ca3af; }
+    .badge-nas         { background: rgba(168,85,247,.12);  color: #a855f7; }
+    .badge-surveillance{ background: rgba(245,158,11,.1);   color: #f59e0b; }
+    .badge-enterprise  { background: rgba(239,68,68,.1);    color: #f87171; }
+    .badge-gaming      { background: rgba(249,115,22,.1);   color: #fb923c; }
 
-    /* PRICE */
-    .price-main { font-size: 15px; font-weight: 700; color: var(--text); }
-    .price-sale { font-size: 11px; color: #10b981; font-weight: 600; margin-top: 1px; }
+    .price-main { font-size: 15px; font-weight: 700; }
     .price-per-tb { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
     .price-per-tb.good { color: #10b981; }
-    .price-per-tb.ok { color: var(--yellow); }
+    .price-per-tb.ok   { color: var(--yellow); }
     .price-per-tb.high { color: var(--red); }
 
-    /* VS DELTA */
-    .vs-delta { font-size: 12px; font-weight: 600; white-space: nowrap; }
-    .vs-delta.cheaper { color: #10b981; }
-    .vs-delta.pricier { color: #f87171; }
-    .vs-delta.parity { color: var(--text-dim); }
-    .vs-no-match { font-size: 12px; color: var(--text-dim); }
+    /* TREND */
+    .trend-cell { white-space: nowrap; }
+    .trend-up   { color: #f87171; font-size: 13px; font-weight: 600; }
+    .trend-down { color: #10b981; font-size: 13px; font-weight: 600; }
+    .trend-flat { color: var(--text-dim); font-size: 13px; }
+    .trend-new  { color: var(--text-dim); font-size: 12px; font-style: italic; }
+    .trend-sub  { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+    .trend-sub.up { color: #f87171; }
+    .trend-sub.down { color: #10b981; }
+
+    /* SPARKLINE */
+    .sparkline-wrap { display: flex; align-items: center; gap: 6px; }
+    .sparkline-wrap svg { display: block; }
+
+    /* VS */
+    .vs-cheaper { color: #10b981; font-size: 12px; font-weight: 600; }
+    .vs-pricier  { color: #f87171; font-size: 12px; font-weight: 600; }
+    .vs-parity   { color: var(--text-dim); font-size: 12px; }
+    .vs-none     { color: var(--text-dim); font-size: 12px; }
 
     /* STOCK */
-    .stock-in { color: #10b981; font-weight: 600; font-size: 12px; }
-    .stock-out { color: var(--red); font-weight: 600; font-size: 12px; }
+    .stock-in  { color: #10b981; font-size: 12px; font-weight: 600; }
+    .stock-out { color: var(--red); font-size: 12px; font-weight: 600; }
 
-    /* PROMO */
-    .promo-badge { background: rgba(245,158,11,.1); border: 1px solid rgba(245,158,11,.2); color: var(--yellow); font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 3px; }
-
-    /* EMPTY */
     .empty-state { text-align: center; padding: 64px 24px; color: var(--text-muted); }
-    .empty-state h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .empty-state h3 { font-size: 18px; color: var(--text); margin-bottom: 8px; }
 
-    /* LEGEND */
-    .legend { display: flex; gap: 16px; padding: 10px 24px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center; }
-    .legend-label { font-size: 11px; color: var(--text-dim); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-right: 4px; }
-    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+    .loading { text-align: center; padding: 80px 24px; color: var(--text-muted); font-size: 14px; }
 
-    @media(max-width:768px) { .controls { padding: 12px 16px; } .table-wrap { padding: 0 16px 16px; } .seg-tabs { padding: 0 16px; } }
+    @media(max-width:768px) {
+      .controls, .legend, .seg-tabs { padding-left: 16px; padding-right: 16px; }
+      .table-wrap { padding: 0 16px 24px; }
+      .topbar { padding: 0 16px; }
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -125,266 +130,222 @@
     <div class="brand-dot"></div>
     HDD Price Tracker — Seagate vs WD
   </div>
-  <div class="topbar-meta">Last updated: <span>Mar 11, 2026</span> · Source: Newegg, Amazon, seagate.com</div>
+  <div class="topbar-meta">
+    <span>Source: Newegg · Amazon · seagate.com</span>
+    <span id="lastUpdated">Loading...</span>
+  </div>
 </div>
 
 <div class="seg-tabs" id="segTabs">
-  <div class="seg-tab active" data-seg="all">All <span class="tab-count" id="cnt-all">0</span></div>
-  <div class="seg-tab" data-seg="desktop">Desktop <span class="tab-count" id="cnt-desktop">0</span></div>
-  <div class="seg-tab" data-seg="nas">NAS <span class="tab-count" id="cnt-nas">0</span></div>
-  <div class="seg-tab" data-seg="surveillance">Surveillance <span class="tab-count" id="cnt-surveillance">0</span></div>
-  <div class="seg-tab" data-seg="enterprise">Enterprise <span class="tab-count" id="cnt-enterprise">0</span></div>
-  <div class="seg-tab" data-seg="gaming">Gaming <span class="tab-count" id="cnt-gaming">0</span></div>
+  <div class="seg-tab active" data-seg="all">All <span class="tab-count" id="cnt-all">—</span></div>
+  <div class="seg-tab" data-seg="desktop">Desktop <span class="tab-count" id="cnt-desktop">—</span></div>
+  <div class="seg-tab" data-seg="nas">NAS <span class="tab-count" id="cnt-nas">—</span></div>
+  <div class="seg-tab" data-seg="surveillance">Surveillance <span class="tab-count" id="cnt-surveillance">—</span></div>
+  <div class="seg-tab" data-seg="enterprise">Enterprise <span class="tab-count" id="cnt-enterprise">—</span></div>
+  <div class="seg-tab" data-seg="gaming">Gaming <span class="tab-count" id="cnt-gaming">—</span></div>
 </div>
 
 <div class="controls">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" placeholder="Search by series, capacity, model...">
+    <input type="text" id="searchInput" placeholder="Search series, capacity...">
   </div>
-  <div class="filter-group">
-    <select id="brandFilter">
-      <option value="all">All Brands</option>
-      <option value="Seagate">Seagate</option>
-      <option value="WD">WD</option>
-    </select>
-    <select id="capFilter">
-      <option value="all">All Capacities</option>
-      <option value="500GB">500GB</option>
-      <option value="1TB">1TB</option>
-      <option value="2TB">2TB</option>
-      <option value="3TB">3TB</option>
-      <option value="4TB">4TB</option>
-      <option value="6TB">6TB</option>
-      <option value="8TB">8TB</option>
-      <option value="10TB">10TB</option>
-      <option value="12TB">12TB</option>
-      <option value="14TB">14TB</option>
-      <option value="16TB">16TB</option>
-      <option value="18TB">18TB</option>
-      <option value="20TB">20TB</option>
-      <option value="22TB">22TB</option>
-      <option value="24TB">24TB</option>
-      <option value="26TB">26TB</option>
-      <option value="28TB">28TB</option>
-      <option value="30TB">30TB</option>
-      <option value="32TB">32TB</option>
-    </select>
-    <select id="stockFilter">
-      <option value="all">All Stock</option>
-      <option value="in">In Stock</option>
-      <option value="out">Out of Stock</option>
-    </select>
-    <select id="sortSelect">
-      <option value="seg-cap">Sort: Segment → Capacity</option>
-      <option value="cap-asc">Sort: Capacity ↑</option>
-      <option value="cap-desc">Sort: Capacity ↓</option>
-      <option value="price-asc">Sort: Price ↑</option>
-      <option value="price-desc">Sort: Price ↓</option>
-      <option value="pertb-asc">Sort: $/TB ↑</option>
-      <option value="pertb-desc">Sort: $/TB ↓</option>
-    </select>
-  </div>
-  <div class="count-badge"><span id="visibleCount">0</span> products</div>
+  <select id="brandFilter">
+    <option value="all">All Brands</option>
+    <option value="Seagate">Seagate</option>
+    <option value="WD">WD</option>
+  </select>
+  <select id="capFilter"><option value="all">All Capacities</option></select>
+  <select id="stockFilter">
+    <option value="all">All Stock</option>
+    <option value="in">In Stock</option>
+    <option value="out">Out of Stock</option>
+  </select>
+  <select id="sortSelect">
+    <option value="seg-cap">Segment → Capacity</option>
+    <option value="cap-asc">Capacity ↑</option>
+    <option value="cap-desc">Capacity ↓</option>
+    <option value="price-asc">Price ↑</option>
+    <option value="price-desc">Price ↓</option>
+    <option value="pertb-asc">$/TB ↑</option>
+    <option value="pertb-desc">$/TB ↓</option>
+    <option value="trend-up">Biggest Price Rises</option>
+    <option value="trend-down">Biggest Price Drops</option>
+  </select>
+  <div class="count-badge"><span id="visCount">—</span> products</div>
   <button class="btn-export" onclick="exportCSV()">⬇ Export CSV</button>
 </div>
 
 <div class="legend">
-  <span class="legend-label">Segments:</span>
-  <span class="legend-item"><span class="badge badge-desktop">Desktop</span> General-purpose, consumer</span>
-  <span class="legend-item"><span class="badge badge-nas">NAS</span> Network-Attached Storage</span>
-  <span class="legend-item"><span class="badge badge-surveillance">Surveillance</span> 24/7 video recording</span>
-  <span class="legend-item"><span class="badge badge-enterprise">Enterprise</span> Data center, 24/7</span>
-  <span class="legend-item"><span class="badge badge-gaming">Gaming</span> High-performance desktop</span>
+  <span class="legend-label">Trend:</span>
+  <span class="legend-item">↑ <span style="color:#f87171">Red</span> = price went up</span>
+  <span class="legend-item">↓ <span style="color:#10b981">Green</span> = price went down</span>
+  <span class="legend-item">Sparkline = last 30 days</span>
+  <span style="margin-left:8px" class="legend-label">Segments:</span>
+  <span class="legend-item"><span class="badge badge-desktop">Desktop</span></span>
+  <span class="legend-item"><span class="badge badge-nas">NAS</span></span>
+  <span class="legend-item"><span class="badge badge-surveillance">Surveillance</span></span>
+  <span class="legend-item"><span class="badge badge-enterprise">Enterprise</span></span>
+  <span class="legend-item"><span class="badge badge-gaming">Gaming</span></span>
 </div>
 
-<div class="table-wrap">
+<div id="loadingState" class="loading">Loading price data...</div>
+
+<div class="table-wrap" id="tableWrap" style="display:none">
   <table id="mainTable">
     <thead>
       <tr>
         <th data-sort="brand">Brand <span class="sort-arrow">↕</span></th>
-        <th data-sort="series">Series / Product <span class="sort-arrow">↕</span></th>
+        <th data-sort="series">Series <span class="sort-arrow">↕</span></th>
         <th data-sort="seg">Segment <span class="sort-arrow">↕</span></th>
         <th data-sort="cap">Capacity <span class="sort-arrow">↕</span></th>
         <th data-sort="price">Price <span class="sort-arrow">↕</span></th>
         <th data-sort="pertb">$/TB <span class="sort-arrow">↕</span></th>
+        <th data-sort="trend7">7-Day Trend <span class="sort-arrow">↕</span></th>
+        <th data-sort="trend30">30-Day Trend <span class="sort-arrow">↕</span></th>
+        <th style="min-width:90px">History</th>
         <th data-sort="vs">vs Competitor <span class="sort-arrow">↕</span></th>
         <th data-sort="stock">Stock <span class="sort-arrow">↕</span></th>
-        <th>Promo</th>
       </tr>
     </thead>
     <tbody id="tableBody"></tbody>
   </table>
   <div class="empty-state" id="emptyState" style="display:none">
     <h3>No results</h3>
-    <p>Try adjusting your filters or search term.</p>
+    <p>Try adjusting your search or filters.</p>
   </div>
 </div>
 
 <script>
-const TB_MAP = { '500GB': 0.5, '1TB': 1, '2TB': 2, '3TB': 3, '4TB': 4, '6TB': 6, '8TB': 8, '10TB': 10, '12TB': 12, '14TB': 14, '16TB': 16, '18TB': 18, '20TB': 20, '22TB': 22, '24TB': 24, '26TB': 26, '28TB': 28, '30TB': 30, '32TB': 32 };
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+const TB_MAP = {'500GB':.5,'1TB':1,'2TB':2,'3TB':3,'4TB':4,'6TB':6,'8TB':8,'10TB':10,'12TB':12,'14TB':14,'16TB':16,'18TB':18,'20TB':20,'22TB':22,'24TB':24,'26TB':26,'28TB':28,'30TB':30,'32TB':32};
 const SEG_ORDER = ['desktop','nas','surveillance','enterprise','gaming'];
+const SEG_LABELS = {desktop:'Desktop',nas:'NAS',surveillance:'Surveillance',enterprise:'Enterprise',gaming:'Gaming'};
+const SEG_BADGE = {desktop:'badge-desktop',nas:'badge-nas',surveillance:'badge-surveillance',enterprise:'badge-enterprise',gaming:'badge-gaming'};
 
-// ── DATA ──────────────────────────────────────────────────────────────────────
-const PRODUCTS = [
-  // ── SEAGATE DESKTOP ──
-  { brand:'Seagate', series:'BarraCuda',       seg:'desktop',     cap:'1TB',  price:67,   promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'BarraCuda',       seg:'desktop',     cap:'2TB',  price:89,   promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'BarraCuda',       seg:'desktop',     cap:'4TB',  price:112,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'BarraCuda',       seg:'desktop',     cap:'8TB',  price:175,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'BarraCuda',       seg:'desktop',     cap:'12TB', price:230,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'BarraCuda Pro',   seg:'desktop',     cap:'2TB',  price:109,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'BarraCuda Pro',   seg:'desktop',     cap:'4TB',  price:135,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'BarraCuda Pro',   seg:'desktop',     cap:'8TB',  price:215,  promo:'',        stock:true,  src:'seagate.com' },
+// ── STATE ─────────────────────────────────────────────────────────────────────
+let PRODUCTS = [];
+let activeSeg = 'all';
+let currentSort = 'seg-cap';
 
-  // ── SEAGATE NAS ──
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'2TB',  price:130,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'4TB',  price:135,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'6TB',  price:115,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'8TB',  price:175,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'10TB', price:195,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'12TB', price:299,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf',        seg:'nas',         cap:'16TB', price:525,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'2TB',  price:100,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'4TB',  price:135,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'8TB',  price:235,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'12TB', price:375,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'16TB', price:490,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'20TB', price:440,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'24TB', price:599,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'28TB', price:699,  promo:'',        stock:true,  src:'seagate.com' },
-  { brand:'Seagate', series:'IronWolf Pro',    seg:'nas',         cap:'32TB', price:760,  promo:'',        stock:false, src:'seagate.com' },
+// ── LOAD DATA ─────────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch('prices.json?_=' + Date.now());
+    const data = await r.json();
 
-  // ── SEAGATE SURVEILLANCE ──
-  { brand:'Seagate', series:'SkyHawk',         seg:'surveillance',cap:'1TB',  price:55,   promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'SkyHawk',         seg:'surveillance',cap:'2TB',  price:70,   promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'SkyHawk',         seg:'surveillance',cap:'4TB',  price:89,   promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'SkyHawk',         seg:'surveillance',cap:'8TB',  price:149,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'SkyHawk AI',      seg:'surveillance',cap:'8TB',  price:179,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'SkyHawk AI',      seg:'surveillance',cap:'16TB', price:349,  promo:'',        stock:true,  src:'seagate.com' },
+    // Update last updated display
+    const el = document.getElementById('lastUpdated');
+    const today = new Date().toISOString().slice(0,10);
+    const isToday = data.lastScraped === today;
+    el.innerHTML = `Last scraped: <span class="${isToday ? 'updated' : 'stale'}">${data.lastScraped}</span>`;
 
-  // ── SEAGATE ENTERPRISE ──
-  { brand:'Seagate', series:'Exos X10',        seg:'enterprise',  cap:'10TB', price:189,  promo:'',        stock:true,  src:'serverpartdeals.com' },
-  { brand:'Seagate', series:'Exos X16',        seg:'enterprise',  cap:'16TB', price:370,  promo:'MMSF75',  stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'Exos X18',        seg:'enterprise',  cap:'18TB', price:345,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'Exos X20',        seg:'enterprise',  cap:'20TB', price:376,  promo:'',        stock:true,  src:'serverpartdeals.com' },
-  { brand:'Seagate', series:'Exos X24',        seg:'enterprise',  cap:'24TB', price:593,  promo:'',        stock:true,  src:'serverpartdeals.com' },
-  { brand:'Seagate', series:'BarraCuda 520',   seg:'enterprise',  cap:'20TB', price:516,  promo:'MMSF75',  stock:true,  src:'Newegg' },
-  { brand:'Seagate', series:'Exos M (30TB)',   seg:'enterprise',  cap:'30TB', price:564,  promo:'',        stock:true,  src:'serverpartdeals.com' },
+    PRODUCTS = data.products.filter(p => p.history && p.history.length > 0);
 
-  // ── SEAGATE GAMING ──
-  { brand:'Seagate', series:'FireCuda',        seg:'gaming',      cap:'2TB',  price:89,   promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'FireCuda',        seg:'gaming',      cap:'4TB',  price:135,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'Seagate', series:'FireCuda',        seg:'gaming',      cap:'8TB',  price:185,  promo:'',        stock:true,  src:'Amazon' },
+    // Populate capacity filter
+    const caps = [...new Set(PRODUCTS.map(p => p.cap))].sort((a,b) => (TB_MAP[a]||0)-(TB_MAP[b]||0));
+    const capSel = document.getElementById('capFilter');
+    caps.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; capSel.appendChild(o); });
 
-  // ── WD DESKTOP ──
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'500GB',price:29.99,promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'1TB',  price:59,   promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'2TB',  price:85.42,promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'4TB',  price:104.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'6TB',  price:159.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'8TB',  price:204.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'10TB', price:239.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Blue',                 seg:'desktop',     cap:'12TB', price:269.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Green',                seg:'desktop',     cap:'4TB',  price:114.95,promo:'',       stock:true,  src:'Newegg' },
+    document.getElementById('loadingState').style.display = 'none';
+    document.getElementById('tableWrap').style.display = '';
+    render();
+  } catch(e) {
+    document.getElementById('loadingState').textContent = 'Error loading prices.json — make sure the scraper has run.';
+    console.error(e);
+  }
+}
 
-  // ── WD NAS ──
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'2TB',  price:90,   promo:'',        stock:true,  src:'Amazon' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'3TB',  price:170,  promo:'MMSF75',  stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'4TB',  price:112,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'6TB',  price:321.45,promo:'MMSF72', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'8TB',  price:180,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'10TB', price:274.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Plus',             seg:'nas',         cap:'12TB', price:280,  promo:'',        stock:true,  src:'Amazon' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'4TB',  price:219,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'6TB',  price:374.45,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'8TB',  price:454.45,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'10TB', price:274.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'12TB', price:292.79,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'14TB', price:489.95,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'16TB', price:599.95,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'18TB', price:555,  promo:'MMSF75',  stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'20TB', price:699,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'22TB', price:740,  promo:'',        stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'24TB', price:599.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Red Pro',              seg:'nas',         cap:'26TB', price:687.90,promo:'',       stock:true,  src:'Newegg' },
-
-  // ── WD SURVEILLANCE ──
-  { brand:'WD', series:'Purple',               seg:'surveillance',cap:'2TB',  price:119.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Purple',               seg:'surveillance',cap:'6TB',  price:196.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Purple',               seg:'surveillance',cap:'8TB',  price:261.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Purple Pro',           seg:'surveillance',cap:'8TB',  price:302.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Purple Pro',           seg:'surveillance',cap:'8TB',  price:305.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Purple Pro',           seg:'surveillance',cap:'10TB', price:314.99,promo:'',       stock:false, src:'Newegg' },
-
-  // ── WD ENTERPRISE ──
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'6TB',  price:310.01,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'8TB',  price:424.45,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'12TB', price:544.45,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'18TB', price:375.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'20TB', price:646.75,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Gold',                 seg:'enterprise',  cap:'24TB', price:710,  promo:'MMSF75',  stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Ultrastar',            seg:'enterprise',  cap:'14TB', price:329.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Re (Datacenter)',      seg:'enterprise',  cap:'4TB',  price:150,  promo:'',        stock:true,  src:'Newegg' },
-
-  // ── WD GAMING ──
-  { brand:'WD', series:'Black',                seg:'gaming',      cap:'2TB',  price:129.99,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Black',                seg:'gaming',      cap:'4TB',  price:185.75,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Black',                seg:'gaming',      cap:'6TB',  price:204.99,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Black (Ref)',          seg:'gaming',      cap:'8TB',  price:165.10,promo:'',       stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Black',                seg:'gaming',      cap:'8TB',  price:301.74,promo:'MMSF75', stock:true,  src:'Newegg' },
-  { brand:'WD', series:'Black',                seg:'gaming',      cap:'10TB', price:342.98,promo:'',       stock:false, src:'Newegg' },
-];
-
-// ── HELPERS ──────────────────────────────────────────────────────────────────
+// ── HELPERS ───────────────────────────────────────────────────────────────────
 function tbVal(cap) { return TB_MAP[cap] || 1; }
-function perTB(price, cap) { return (price / tbVal(cap)).toFixed(2); }
-function capBytes(cap) { const m = TB_MAP[cap]; return m ? m * 1e12 : 0; }
+function perTB(price, cap) { return (price / tbVal(cap)); }
 
-function buildCompetitorMap() {
+function currentPrice(p) {
+  const h = p.history;
+  return h && h.length ? h[h.length-1] : null;
+}
+
+function priceNDaysAgo(p, n) {
+  const h = p.history;
+  if (!h || h.length < 2) return null;
+  const cutoff = new Date(h[h.length-1].date);
+  cutoff.setDate(cutoff.getDate() - n);
+  const cutStr = cutoff.toISOString().slice(0,10);
+  // Find closest entry at or before cutoff
+  for (let i = h.length - 2; i >= 0; i--) {
+    if (h[i].date <= cutStr) return h[i];
+  }
+  return null;
+}
+
+function trendDelta(p, days) {
+  const cur = currentPrice(p);
+  const old = priceNDaysAgo(p, days);
+  if (!cur || !old) return null;
+  return { delta: cur.price - old.price, pct: ((cur.price - old.price) / old.price * 100), oldPrice: old.price, days };
+}
+
+function buildCompMap() {
   const map = {};
   PRODUCTS.forEach(p => {
     const key = `${p.seg}|${p.cap}`;
     if (!map[key]) map[key] = { Seagate: [], WD: [] };
-    if (p.brand === 'Seagate' || p.brand === 'WD') {
-      (map[key][p.brand] || (map[key][p.brand] = [])).push(p.price);
-    }
+    const cur = currentPrice(p);
+    if (cur) (map[key][p.brand] || (map[key][p.brand] = [])).push(cur.price);
   });
   return map;
 }
-const COMP_MAP = buildCompetitorMap();
 
-function vsCompetitor(p) {
-  const key = `${p.seg}|${p.cap}`;
-  const bucket = COMP_MAP[key];
-  if (!bucket) return null;
-  const other = p.brand === 'Seagate' ? bucket['WD'] : bucket['Seagate'];
-  if (!other || !other.length) return null;
-  const otherMin = Math.min(...other);
-  const diff = p.price - otherMin;
-  const pct = ((diff / otherMin) * 100).toFixed(0);
-  return { diff, pct, otherMin };
+function sparklineSVG(history, w=80, h=24) {
+  const recent = history.slice(-30);
+  if (recent.length < 2) return `<svg width="${w}" height="${h}"></svg>`;
+  const prices = recent.map(e => e.price);
+  const min = Math.min(...prices), max = Math.max(...prices);
+  const range = max - min || 1;
+  const pts = prices.map((p, i) => {
+    const x = (i / (prices.length - 1)) * (w - 2) + 1;
+    const y = h - 2 - ((p - min) / range) * (h - 4);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const last = prices[prices.length-1], first = prices[0];
+  const color = last > first ? '#f87171' : last < first ? '#10b981' : '#555';
+  return `<svg width="${w}" height="${h}" style="overflow:visible"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg>`;
 }
 
-const SEG_LABELS = {
-  desktop: 'Desktop', nas: 'NAS', surveillance: 'Surveillance',
-  enterprise: 'Enterprise', gaming: 'Gaming'
-};
-const SEG_BADGE = {
-  desktop: 'badge-desktop', nas: 'badge-nas', surveillance: 'badge-surveillance',
-  enterprise: 'badge-enterprise', gaming: 'badge-gaming'
-};
-function perTBClass(val) {
+function trendHTML(delta, label) {
+  if (!delta) return `<span class="trend-new">${label === 7 ? 'no 7d data' : 'no 30d data'}</span>`;
+  const abs = Math.abs(delta.delta);
+  const pct = Math.abs(delta.pct);
+  if (abs < 0.50) return `<span class="trend-flat">→ flat</span>`;
+  const dir = delta.delta > 0 ? 'up' : 'down';
+  const sign = delta.delta > 0 ? '+' : '-';
+  const cls = delta.delta > 0 ? 'trend-up' : 'trend-down';
+  return `<span class="${cls}">${delta.delta > 0 ? '↑' : '↓'} ${sign}$${abs.toFixed(2)}</span><div class="trend-sub ${dir}">${sign}${pct.toFixed(1)}%</div>`;
+}
+
+function vsHTML(p, compMap) {
+  const key = `${p.seg}|${p.cap}`;
+  const bucket = compMap[key];
+  if (!bucket) return '<span class="vs-none">—</span>';
+  const other = p.brand === 'Seagate' ? bucket['WD'] : bucket['Seagate'];
+  if (!other || !other.length) return '<span class="vs-none">—</span>';
+  const cur = currentPrice(p);
+  if (!cur) return '<span class="vs-none">—</span>';
+  const otherMin = Math.min(...other);
+  const diff = cur.price - otherMin;
+  const pct = (diff / otherMin * 100).toFixed(0);
+  if (Math.abs(diff) < 1) return `<span class="vs-parity">≈ parity</span>`;
+  if (diff < 0) return `<span class="vs-cheaper">↓ ${Math.abs(pct)}% cheaper</span><div class="trend-sub">vs $${otherMin.toFixed(2)}</div>`;
+  return `<span class="vs-pricier">↑ ${pct}% pricier</span><div class="trend-sub">vs $${otherMin.toFixed(2)}</div>`;
+}
+
+function ptbClass(val) {
   if (val < 20) return 'good';
   if (val < 40) return 'ok';
   return 'high';
 }
 
-// ── STATE ─────────────────────────────────────────────────────────────────────
-let activeSeg = 'all';
-let sortKey = 'seg-cap';
-let sortDir = 1;
-
+// ── FILTER + SORT ─────────────────────────────────────────────────────────────
 function getFiltered() {
   const q = document.getElementById('searchInput').value.toLowerCase();
   const brand = document.getElementById('brandFilter').value;
@@ -396,8 +357,9 @@ function getFiltered() {
     if (activeSeg !== 'all' && p.seg !== activeSeg) return false;
     if (brand !== 'all' && p.brand !== brand) return false;
     if (cap !== 'all' && p.cap !== cap) return false;
-    if (stock === 'in' && !p.stock) return false;
-    if (stock === 'out' && p.stock) return false;
+    const cur = currentPrice(p);
+    if (stock === 'in' && cur && !cur.stock) return false;
+    if (stock === 'out' && (!cur || cur.stock)) return false;
     if (q) {
       const hay = `${p.brand} ${p.series} ${p.cap} ${p.seg}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -406,81 +368,83 @@ function getFiltered() {
   });
 
   list.sort((a, b) => {
+    const ca = currentPrice(a), cb = currentPrice(b);
+    const pa = ca ? ca.price : 0, pb = cb ? cb.price : 0;
     if (sort === 'seg-cap') {
       const si = SEG_ORDER.indexOf(a.seg) - SEG_ORDER.indexOf(b.seg);
       if (si !== 0) return si;
-      const ci = capBytes(a.cap) - capBytes(b.cap);
+      const ci = (TB_MAP[a.cap]||0) - (TB_MAP[b.cap]||0);
       if (ci !== 0) return ci;
       return a.brand.localeCompare(b.brand);
     }
-    if (sort === 'cap-asc') return capBytes(a.cap) - capBytes(b.cap);
-    if (sort === 'cap-desc') return capBytes(b.cap) - capBytes(a.cap);
-    if (sort === 'price-asc') return a.price - b.price;
-    if (sort === 'price-desc') return b.price - a.price;
-    if (sort === 'pertb-asc') return parseFloat(perTB(a.price,a.cap)) - parseFloat(perTB(b.price,b.cap));
-    if (sort === 'pertb-desc') return parseFloat(perTB(b.price,b.cap)) - parseFloat(perTB(a.price,a.cap));
+    if (sort === 'cap-asc')  return (TB_MAP[a.cap]||0) - (TB_MAP[b.cap]||0);
+    if (sort === 'cap-desc') return (TB_MAP[b.cap]||0) - (TB_MAP[a.cap]||0);
+    if (sort === 'price-asc')  return pa - pb;
+    if (sort === 'price-desc') return pb - pa;
+    if (sort === 'pertb-asc')  return perTB(pa,a.cap) - perTB(pb,b.cap);
+    if (sort === 'pertb-desc') return perTB(pb,b.cap) - perTB(pa,a.cap);
+    if (sort === 'trend-up' || sort === 'trend-down') {
+      const ta = trendDelta(a,7), tb2 = trendDelta(b,7);
+      const da = ta ? ta.delta : 0, db = tb2 ? tb2.delta : 0;
+      return sort === 'trend-up' ? db - da : da - db;
+    }
     return 0;
   });
   return list;
 }
 
-function renderTable() {
+// ── RENDER ────────────────────────────────────────────────────────────────────
+function render() {
   const list = getFiltered();
   const tbody = document.getElementById('tableBody');
   const empty = document.getElementById('emptyState');
+  const compMap = buildCompMap();
 
-  document.getElementById('visibleCount').textContent = list.length;
+  document.getElementById('visCount').textContent = list.length;
 
-  // Update tab counts
+  // Tab counts
   const segCounts = { all: PRODUCTS.length };
   SEG_ORDER.forEach(s => { segCounts[s] = PRODUCTS.filter(p => p.seg === s).length; });
-  Object.keys(segCounts).forEach(s => {
-    const el = document.getElementById(`cnt-${s}`);
-    if (el) el.textContent = segCounts[s];
+  ['all', ...SEG_ORDER].forEach(s => {
+    const el = document.getElementById('cnt-' + s);
+    if (el) el.textContent = segCounts[s] || 0;
   });
 
-  if (list.length === 0) { tbody.innerHTML = ''; empty.style.display = ''; return; }
+  if (!list.length) { tbody.innerHTML = ''; empty.style.display = ''; return; }
   empty.style.display = 'none';
 
   tbody.innerHTML = list.map(p => {
-    const ptb = perTB(p.price, p.cap);
-    const ptbClass = perTBClass(parseFloat(ptb));
-    const vs = vsCompetitor(p);
-    let vsHtml = '<span class="vs-no-match">—</span>';
-    if (vs) {
-      const sign = vs.diff > 0 ? '+' : '';
-      const cls = vs.diff < -2 ? 'cheaper' : vs.diff > 2 ? 'pricier' : 'parity';
-      const label = vs.diff < -2 ? `${sign}${vs.pct}% cheaper` : vs.diff > 2 ? `${sign}${vs.pct}% pricier` : 'At parity';
-      vsHtml = `<span class="vs-delta ${cls}">${label}</span><br><span style="font-size:11px;color:var(--text-dim)">vs $${vs.otherMin.toFixed(2)}</span>`;
-    }
+    const cur = currentPrice(p);
+    if (!cur) return '';
+    const ptb = perTB(cur.price, p.cap);
+    const ptbCls = ptbClass(ptb);
+    const t7 = trendDelta(p, 7);
+    const t30 = trendDelta(p, 30);
     const brandBadge = p.brand === 'Seagate' ? 'badge-seagate' : 'badge-wd';
-    const promoHtml = p.promo ? `<span class="promo-badge">${p.promo}</span>` : '<span style="color:var(--text-dim);font-size:12px">—</span>';
-    const stockHtml = p.stock ? '<span class="stock-in">✓ In Stock</span>' : '<span class="stock-out">✗ Out of Stock</span>';
+    const src = p.history[p.history.length-1].src || '';
     return `<tr>
       <td><span class="badge ${brandBadge}">${p.brand}</span></td>
       <td>
         <div class="prod-name">${p.series} ${p.cap}</div>
-        <div class="prod-series">${p.src}</div>
+        <div class="prod-src">${src}</div>
       </td>
       <td><span class="badge ${SEG_BADGE[p.seg]}">${SEG_LABELS[p.seg]}</span></td>
-      <td style="font-weight:600;white-space:nowrap">${p.cap}</td>
-      <td>
-        <div class="price-main">$${p.price.toFixed(2)}</div>
-      </td>
-      <td><span class="price-per-tb ${ptbClass}">$${ptb}/TB</span></td>
-      <td>${vsHtml}</td>
-      <td>${stockHtml}</td>
-      <td>${promoHtml}</td>
+      <td style="font-weight:600">${p.cap}</td>
+      <td><div class="price-main">$${cur.price.toFixed(2)}</div></td>
+      <td><span class="price-per-tb ${ptbCls}">$${ptb.toFixed(2)}/TB</span></td>
+      <td class="trend-cell">${trendHTML(t7, 7)}</td>
+      <td class="trend-cell">${trendHTML(t30, 30)}</td>
+      <td>${sparklineSVG(p.history)}</td>
+      <td>${vsHTML(p, compMap)}</td>
+      <td>${cur.stock ? '<span class="stock-in">✓ In Stock</span>' : '<span class="stock-out">✗ Out of Stock</span>'}</td>
     </tr>`;
   }).join('');
 }
 
-// ── EVENT LISTENERS ──────────────────────────────────────────────────────────
-document.getElementById('searchInput').addEventListener('input', renderTable);
-document.getElementById('brandFilter').addEventListener('change', renderTable);
-document.getElementById('capFilter').addEventListener('change', renderTable);
-document.getElementById('stockFilter').addEventListener('change', renderTable);
-document.getElementById('sortSelect').addEventListener('change', renderTable);
+// ── EVENTS ────────────────────────────────────────────────────────────────────
+['searchInput','brandFilter','capFilter','stockFilter','sortSelect'].forEach(id => {
+  document.getElementById(id).addEventListener(id === 'searchInput' ? 'input' : 'change', render);
+});
 
 document.getElementById('segTabs').addEventListener('click', e => {
   const tab = e.target.closest('.seg-tab');
@@ -488,25 +452,37 @@ document.getElementById('segTabs').addEventListener('click', e => {
   document.querySelectorAll('.seg-tab').forEach(t => t.classList.remove('active'));
   tab.classList.add('active');
   activeSeg = tab.dataset.seg;
-  renderTable();
+  render();
 });
 
-// ── EXPORT ───────────────────────────────────────────────────────────────────
+// ── EXPORT ────────────────────────────────────────────────────────────────────
 function exportCSV() {
   const list = getFiltered();
-  const rows = [['Brand','Series','Segment','Capacity','Price','$/TB','In Stock','Promo','Source']];
+  const rows = [['Brand','Series','Segment','Capacity','Price','$/TB','7d Delta','30d Delta','In Stock','Source','Date']];
   list.forEach(p => {
-    rows.push([p.brand, p.series, SEG_LABELS[p.seg], p.cap, `$${p.price}`, `$${perTB(p.price,p.cap)}`, p.stock?'Yes':'No', p.promo||'', p.src]);
+    const cur = currentPrice(p);
+    if (!cur) return;
+    const t7 = trendDelta(p,7), t30 = trendDelta(p,30);
+    rows.push([
+      p.brand, p.series, SEG_LABELS[p.seg], p.cap,
+      `$${cur.price}`,
+      `$${perTB(cur.price,p.cap).toFixed(2)}`,
+      t7 ? `${t7.delta > 0 ? '+' : ''}${t7.delta.toFixed(2)}` : '',
+      t30 ? `${t30.delta > 0 ? '+' : ''}${t30.delta.toFixed(2)}` : '',
+      cur.stock ? 'Yes' : 'No',
+      cur.src || '',
+      cur.date
+    ]);
   });
-  const csv = rows.map(r => r.join(',')).join('\n');
+  const csv = rows.map(r => r.map(v => `"${v}"`).join(',')).join('\n');
   const a = document.createElement('a');
   a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
-  a.download = `hdd-tracker-${new Date().toISOString().slice(0,10)}.csv`;
+  a.download = `hdd-prices-${new Date().toISOString().slice(0,10)}.csv`;
   a.click();
 }
 
-// ── INIT ─────────────────────────────────────────────────────────────────────
-renderTable();
+// ── INIT ──────────────────────────────────────────────────────────────────────
+loadData();
 </script>
 </body>
 </html>

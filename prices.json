@@ -1,0 +1,1086 @@
+{
+  "version": 1,
+  "lastScraped": "2026-03-11",
+  "products": [
+    {
+      "id": "sgt-iw-2tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 130,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-4tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 135,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-6tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 115,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-8tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 175,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-10tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 195,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-12tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 299,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iw-16tb",
+      "brand": "Seagate",
+      "series": "IronWolf",
+      "seg": "nas",
+      "cap": "16TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 525,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-2tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 100,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-4tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 135,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-8tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 235,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-12tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 375,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-16tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "16TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 490,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-20tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "20TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 440,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-24tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "24TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 599,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-28tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "28TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 699,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-iwp-32tb",
+      "brand": "Seagate",
+      "series": "IronWolf Pro",
+      "seg": "nas",
+      "cap": "32TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 760,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc-1tb",
+      "brand": "Seagate",
+      "series": "BarraCuda",
+      "seg": "desktop",
+      "cap": "1TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 67,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc-2tb",
+      "brand": "Seagate",
+      "series": "BarraCuda",
+      "seg": "desktop",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 89,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc-4tb",
+      "brand": "Seagate",
+      "series": "BarraCuda",
+      "seg": "desktop",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 112,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc-8tb",
+      "brand": "Seagate",
+      "series": "BarraCuda",
+      "seg": "desktop",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 175,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc-12tb",
+      "brand": "Seagate",
+      "series": "BarraCuda",
+      "seg": "desktop",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 230,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-sh-2tb",
+      "brand": "Seagate",
+      "series": "SkyHawk",
+      "seg": "surveillance",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 70,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-sh-4tb",
+      "brand": "Seagate",
+      "series": "SkyHawk",
+      "seg": "surveillance",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 89,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-sh-8tb",
+      "brand": "Seagate",
+      "series": "SkyHawk",
+      "seg": "surveillance",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 149,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-ex16-16tb",
+      "brand": "Seagate",
+      "series": "Exos X16",
+      "seg": "enterprise",
+      "cap": "16TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 370,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-ex18-18tb",
+      "brand": "Seagate",
+      "series": "Exos X18",
+      "seg": "enterprise",
+      "cap": "18TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 345,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-ex20-20tb",
+      "brand": "Seagate",
+      "series": "Exos X20",
+      "seg": "enterprise",
+      "cap": "20TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 376,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "sgt-bc520-20tb",
+      "brand": "Seagate",
+      "series": "BarraCuda 520",
+      "seg": "enterprise",
+      "cap": "20TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 516,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-500gb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "500GB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 29.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-1tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "1TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 59,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-2tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 85.42,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-4tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 104.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-6tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 159.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-8tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 204.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-10tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 239.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blue-12tb",
+      "brand": "WD",
+      "series": "Blue",
+      "seg": "desktop",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 269.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-green-4tb",
+      "brand": "WD",
+      "series": "Green",
+      "seg": "desktop",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 114.95,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-2tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 90,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-3tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "3TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 170,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-4tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 112,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-6tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 321.45,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-8tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 180,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-10tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 274.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rp-12tb",
+      "brand": "WD",
+      "series": "Red Plus",
+      "seg": "nas",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 280,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-4tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 219,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-6tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 374.45,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-8tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 454.45,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-10tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 274.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-12tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 292.79,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-14tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "14TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 489.95,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-16tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "16TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 599.95,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-18tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "18TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 555,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-22tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "22TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 740,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-24tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "24TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 599.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-rpro-26tb",
+      "brand": "WD",
+      "series": "Red Pro",
+      "seg": "nas",
+      "cap": "26TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 687.9,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-pur-2tb",
+      "brand": "WD",
+      "series": "Purple",
+      "seg": "surveillance",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 119.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-pur-6tb",
+      "brand": "WD",
+      "series": "Purple",
+      "seg": "surveillance",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 196.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-pur-8tb",
+      "brand": "WD",
+      "series": "Purple",
+      "seg": "surveillance",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 261.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-purp-8tb",
+      "brand": "WD",
+      "series": "Purple Pro",
+      "seg": "surveillance",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 302.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-purp-10tb",
+      "brand": "WD",
+      "series": "Purple Pro",
+      "seg": "surveillance",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 314.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-6tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 310.01,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-8tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 424.45,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-12tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "12TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 544.45,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-18tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "18TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 375.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-20tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "20TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 646.75,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-gold-24tb",
+      "brand": "WD",
+      "series": "Gold",
+      "seg": "enterprise",
+      "cap": "24TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 710,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-ult-14tb",
+      "brand": "WD",
+      "series": "Ultrastar",
+      "seg": "enterprise",
+      "cap": "14TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 329.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blk-2tb",
+      "brand": "WD",
+      "series": "Black",
+      "seg": "gaming",
+      "cap": "2TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 129.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blk-4tb",
+      "brand": "WD",
+      "series": "Black",
+      "seg": "gaming",
+      "cap": "4TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 185.75,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blk-6tb",
+      "brand": "WD",
+      "series": "Black",
+      "seg": "gaming",
+      "cap": "6TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 204.99,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blk-8tb",
+      "brand": "WD",
+      "series": "Black",
+      "seg": "gaming",
+      "cap": "8TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 301.74,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    },
+    {
+      "id": "wd-blk-10tb",
+      "brand": "WD",
+      "series": "Black",
+      "seg": "gaming",
+      "cap": "10TB",
+      "history": [
+        {
+          "date": "2026-03-11",
+          "price": 342.98,
+          "stock": true,
+          "src": "manual"
+        }
+      ]
+    }
+  ]
+}
